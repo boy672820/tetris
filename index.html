@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Tetris</title>
+
+	<link rel="stylesheet" href="./reset.min.css">
+	<style>
+		.app-container {
+			width: 720px;
+			margin: 0 auto;
+			position: relative;
+			/*display: none;*/
+		}
+		.map {
+			width: 300px;
+			margin: 40px auto 0 auto;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+		.map__td {
+			width: 30px;
+			height: 30px;
+			border: 1px solid black;
+		}
+		.map__td--active {
+			background-color: blue;
+		}
+		.map__td--aqua { background-color: aqua; }
+		.map__td--yellow { background-color: yellow; }
+		.map__td--red { background-color: red; }
+		.map__td--green { background-color: green; }
+		.map__td--blue { background-color: blue; }
+		.map__td--orange { background-color: orange; }
+		.map__td--pink { background-color: pink; }
+	</style>
+</head>
+
+<body>
+
+	<div id="app-container" class="app-container"></div>
+
+	<script src="./app.js"></script>
+
+</body>
+</html>
